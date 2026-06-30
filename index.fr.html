@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haneul — Politique de confidentialité</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;600&display=swap');
+
+  :root {
+    --bg: #0D0B1E;
+    --bg-card: #14112A;
+    --border: #2A2550;
+    --violet: #7C3AED;
+    --blue: #3B82F6;
+    --text: #E8E6F5;
+    --text-dim: #9D97C4;
+    --text-faint: #6A638F;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 800px 500px at 10% -10%, rgba(124,58,237,0.18), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 0%, rgba(59,130,246,0.14), transparent 60%);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: 'Manrope', system-ui, sans-serif;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+
+  header.hero { margin-bottom: 3.5rem; }
+
+  .mark {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--violet), var(--blue));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 26px; font-weight: 600; color: white;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 30px rgba(124,58,237,0.35);
+  }
+
+  .eyebrow {
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--violet);
+    margin-bottom: 0.6rem;
+  }
+
+  h1 {
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -0.02em;
+    line-height: 1.1; color: #fff; margin-bottom: 0.75rem;
+  }
+
+  .updated { color: var(--text-faint); font-size: 0.9rem; }
+
+  .lang-toggle {
+    display: inline-flex; gap: 2px; margin-top: 1.5rem;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 999px; padding: 4px;
+  }
+  .lang-toggle a {
+    padding: 7px 18px; border-radius: 999px; font-size: 0.85rem;
+    font-weight: 600; text-decoration: none; color: var(--text-dim);
+    transition: all 0.15s;
+  }
+  .lang-toggle a.active {
+    background: linear-gradient(135deg, var(--violet), var(--blue));
+    color: white;
+  }
+
+  section { margin-bottom: 2.75rem; }
+
+  h2 {
+    font-size: 1.25rem; font-weight: 700; color: #fff;
+    margin-bottom: 1rem; display: flex; align-items: baseline; gap: 0.6rem;
+  }
+  h2 .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.95rem; font-weight: 600; color: var(--violet);
+  }
+
+  p { color: var(--text-dim); margin-bottom: 1rem; font-size: 0.97rem; }
+  p:last-child { margin-bottom: 0; }
+
+  a.inline { color: var(--blue); text-decoration: none; border-bottom: 1px solid rgba(59,130,246,0.3); }
+  a.inline:hover { border-bottom-color: var(--blue); }
+
+  .card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 1.5rem 1.6rem; margin-bottom: 1rem;
+  }
+  .card h3 {
+    font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .card p { font-size: 0.92rem; margin-bottom: 0; }
+
+  ul.rights { list-style: none; }
+  ul.rights li {
+    padding: 0.85rem 0; border-bottom: 1px solid var(--border);
+    color: var(--text-dim); font-size: 0.95rem;
+  }
+  ul.rights li:last-child { border-bottom: none; }
+  ul.rights strong { color: var(--text); font-weight: 600; }
+
+  .contact-box {
+    background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(59,130,246,0.08));
+    border: 1px solid rgba(124,58,237,0.3);
+    border-radius: 16px; padding: 1.75rem;
+    text-align: center; margin-top: 3rem;
+  }
+  .contact-box p { color: var(--text-dim); margin-bottom: 0.75rem; }
+  .contact-box .email {
+    font-size: 1.1rem; font-weight: 700; color: #fff;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--violet), var(--blue));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+
+  footer {
+    margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border);
+    color: var(--text-faint); font-size: 0.85rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+  }
+  footer a { color: var(--text-faint); }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.9rem; }
+    .wrap { padding: 3rem 1.25rem 4rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="mark">하</div>
+    <div class="eyebrow">Mentions légales · Haneul</div>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : 30/06/2026</p>
+    <div class="lang-toggle">
+      <a href="index.html">EN</a>
+      <a href="index.fr.html" class="active">FR</a>
+    </div>
+  </header>
+
+  <section>
+    <p>Bienvenue sur Haneul (하늘), l'application de suivi de dramas et films coréens. La présente politique explique quelles données nous collectons, pourquoi, et comment elles sont utilisées et protégées.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">01</span>Qui sommes-nous</h2>
+    <p>Haneul est développée par HaneulCreator. Pour toute question relative à vos données personnelles, vous pouvez nous contacter à <a class="inline" href="mailto:haneul.app.contact@gmail.com">haneul.app.contact@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Données que nous collectons</h2>
+
+    <div class="card">
+      <h3>Données de compte</h3>
+      <p>Si vous créez un compte (optionnel — l'app fonctionne aussi sans), nous collectons votre email et mot de passe (chiffré — nous n'y avons jamais accès en clair). Avec Google ou Apple, nous recevons l'identifiant et l'email associés à ce compte, transmis selon leurs propres conditions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Données de votre bibliothèque</h3>
+      <p>Séries, films, statuts, notes personnelles sont stockés localement sur votre appareil par défaut. Si vous êtes connecté, ces données sont aussi synchronisées sur nos serveurs (Supabase) pour les retrouver sur plusieurs appareils et bénéficier d'une sauvegarde distante.</p>
+    </div>
+
+    <div class="card">
+      <h3>Localisation approximative</h3>
+      <p>Votre adresse IP sert à déterminer votre pays de façon approximative, uniquement pour afficher les plateformes de streaming disponibles dans votre région. Cette information n'est pas stockée durablement.</p>
+    </div>
+
+    <div class="card">
+      <h3>Profil communautaire</h3>
+      <p>Si vous activez les fonctionnalités communautaires, peuvent être visibles selon vos paramètres : nom d'utilisateur, photo de profil, bannière, statistiques si rendues publiques, et liste d'abonnés/abonnements.</p>
+    </div>
+
+    <div class="card">
+      <h3>Photos et médias</h3>
+      <p>Une photo de profil personnalisée depuis votre galerie n'est importée qu'avec votre autorisation explicite et stockée de manière sécurisée.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Pourquoi nous collectons ces données</h2>
+    <p>Uniquement pour vous permettre de vous connecter sur plusieurs appareils, sauvegarder votre bibliothèque, afficher les plateformes pertinentes pour votre région, activer les fonctionnalités communautaires si vous le souhaitez, et vous envoyer des emails liés à votre compte.</p>
+    <p>Nous ne vendons ni ne partageons vos données à des fins publicitaires.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Partage avec des tiers</h2>
+    <ul class="rights">
+      <li><strong>Supabase</strong> — hébergement, authentification, base de données. Voir <a class="inline" href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+      <li><strong>TMDB</strong> — informations sur séries et films. Aucune donnée personnelle transmise, uniquement vos recherches.</li>
+      <li><strong>Resend</strong> — emails transactionnels (réinitialisation de mot de passe)</li>
+      <li><strong>Google / Apple</strong> — si vous utilisez leurs services de connexion</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Conservation des données</h2>
+    <p>Vos données sont conservées tant que votre compte est actif. En cas de suppression de compte, vos données serveur sont supprimées sous un délai raisonnable, sauf obligation légale contraire.</p>
+    <p>Les données locales restent sous votre contrôle et peuvent être supprimées via les paramètres (Zone dangereuse).</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>Vos droits</h2>
+    <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+    <ul class="rights">
+      <li><strong>Accès</strong> — obtenir une copie de vos données</li>
+      <li><strong>Rectification</strong> — corriger des données inexactes</li>
+      <li><strong>Effacement</strong> — demander la suppression de vos données</li>
+      <li><strong>Portabilité</strong> — exporter vos données (disponible dans l'app via "Exporter ma liste")</li>
+      <li><strong>Opposition</strong> — vous opposer à certains traitements</li>
+    </ul>
+    <p>Pour exercer ces droits : <a class="inline" href="mailto:haneul.app.contact@gmail.com">haneul.app.contact@gmail.com</a>. Vous pouvez aussi saisir la <a class="inline" href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>Sécurité des données</h2>
+    <p>Nous mettons en œuvre des mesures techniques raisonnables (chiffrement des mots de passe, connexions sécurisées HTTPS). Aucune méthode n'est garantie sécurisée à 100%.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>Données des mineurs</h2>
+    <p>Haneul n'est pas destinée aux moins de 13 ans. Nous ne collectons pas sciemment de données les concernant. Contactez-nous si vous pensez qu'un enfant nous a fourni des données.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>Modifications</h2>
+    <p>Cette politique peut être mise à jour, notamment lors de l'ajout de nouvelles fonctionnalités (publicités, abonnements). Toute modification substantielle sera notifiée dans l'app.</p>
+  </section>
+
+  <div class="contact-box">
+    <p>Une question sur cette politique ou vos données ?</p>
+    <a class="email" href="mailto:haneul.app.contact@gmail.com">haneul.app.contact@gmail.com</a>
+  </div>
+
+  <footer>
+    <span>© 2026 Haneul 하늘</span>
+    <a href="terms.fr.html">Conditions d'utilisation →</a>
+  </footer>
+
+</div>
+</body>
+</html>

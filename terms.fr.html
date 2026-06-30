@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haneul — Conditions d'utilisation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;600&display=swap');
+
+  :root {
+    --bg: #0D0B1E;
+    --bg-card: #14112A;
+    --border: #2A2550;
+    --violet: #7C3AED;
+    --blue: #3B82F6;
+    --text: #E8E6F5;
+    --text-dim: #9D97C4;
+    --text-faint: #6A638F;
+    --warn: #F59E0B;
+    --danger: #F87171;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 800px 500px at 10% -10%, rgba(124,58,237,0.18), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 0%, rgba(59,130,246,0.14), transparent 60%);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: 'Manrope', system-ui, sans-serif;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+
+  header.hero { margin-bottom: 3.5rem; }
+
+  .mark {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--violet), var(--blue));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 26px; font-weight: 600; color: white;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 30px rgba(124,58,237,0.35);
+  }
+
+  .eyebrow {
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--violet);
+    margin-bottom: 0.6rem;
+  }
+
+  h1 {
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -0.02em;
+    line-height: 1.1; color: #fff; margin-bottom: 0.75rem;
+  }
+
+  .updated { color: var(--text-faint); font-size: 0.9rem; }
+
+  .lang-toggle {
+    display: inline-flex; gap: 2px; margin-top: 1.5rem;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 999px; padding: 4px;
+  }
+  .lang-toggle a {
+    padding: 7px 18px; border-radius: 999px; font-size: 0.85rem;
+    font-weight: 600; text-decoration: none; color: var(--text-dim);
+    transition: all 0.15s;
+  }
+  .lang-toggle a.active {
+    background: linear-gradient(135deg, var(--violet), var(--blue));
+    color: white;
+  }
+
+  section { margin-bottom: 2.75rem; }
+
+  h2 {
+    font-size: 1.25rem; font-weight: 700; color: #fff;
+    margin-bottom: 1rem; display: flex; align-items: baseline; gap: 0.6rem;
+  }
+  h2 .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.95rem; font-weight: 600; color: var(--violet);
+  }
+
+  p { color: var(--text-dim); margin-bottom: 1rem; font-size: 0.97rem; }
+  p:last-child { margin-bottom: 0; }
+
+  a.inline { color: var(--blue); text-decoration: none; border-bottom: 1px solid rgba(59,130,246,0.3); }
+  a.inline:hover { border-bottom-color: var(--blue); }
+
+  .conduct-grid {
+    display: grid; gap: 0.75rem; margin-top: 1rem;
+  }
+  .conduct-item {
+    display: flex; gap: 0.85rem; align-items: flex-start;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1rem 1.1rem;
+  }
+  .conduct-item .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--danger); margin-top: 7px; flex-shrink: 0;
+  }
+  .conduct-item p { font-size: 0.9rem; margin: 0; color: var(--text-dim); }
+  .conduct-item strong { color: var(--text); }
+
+  .enforcement {
+    background: rgba(245,158,11,0.08);
+    border: 1px solid rgba(245,158,11,0.25);
+    border-radius: 14px; padding: 1.5rem 1.6rem;
+    margin-top: 1.25rem;
+  }
+  .enforcement h3 {
+    font-size: 0.95rem; font-weight: 700; color: var(--warn);
+    margin-bottom: 0.6rem;
+  }
+  .enforcement p { font-size: 0.92rem; margin-bottom: 0.6rem; }
+  .enforcement p:last-child { margin-bottom: 0; }
+
+  .contact-box {
+    background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(59,130,246,0.08));
+    border: 1px solid rgba(124,58,237,0.3);
+    border-radius: 16px; padding: 1.75rem;
+    text-align: center; margin-top: 3rem;
+  }
+  .contact-box p { color: var(--text-dim); margin-bottom: 0.75rem; }
+  .contact-box .email {
+    font-size: 1.1rem; font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--violet), var(--blue));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+
+  footer {
+    margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border);
+    color: var(--text-faint); font-size: 0.85rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+  }
+  footer a { color: var(--text-faint); }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.9rem; }
+    .wrap { padding: 3rem 1.25rem 4rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="mark">하</div>
+    <div class="eyebrow">Mentions légales · Haneul</div>
+    <h1>Conditions d'utilisation</h1>
+    <p class="updated">Dernière mise à jour : 30/06/2026</p>
+    <div class="lang-toggle">
+      <a href="terms.html">EN</a>
+      <a href="terms.fr.html" class="active">FR</a>
+    </div>
+  </header>
+
+  <section>
+    <p>Ces conditions d'utilisation régissent votre accès et utilisation de Haneul (하늘), développée par HaneulCreator (« nous »). En créant un compte ou en utilisant l'app, vous acceptez ces conditions.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">01</span>Utiliser Haneul</h2>
+    <p>Haneul permet de suivre des dramas et films coréens, de les noter, d'organiser votre progression de visionnage et, en option, de vous connecter avec d'autres utilisateurs via les fonctionnalités communautaires. L'app fonctionne sans compte (stockage local uniquement) ou avec un compte pour la synchronisation cloud.</p>
+    <p>Vous devez avoir au moins 13 ans pour utiliser Haneul. Si vous avez moins de 18 ans, assurez-vous d'avoir l'autorisation d'un parent ou tuteur.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Votre compte</h2>
+    <p>Vous êtes responsable de la sécurité de vos identifiants et de toute activité sur votre compte. Contactez-nous immédiatement en cas de suspicion d'accès non autorisé. Vous pouvez supprimer votre compte à tout moment depuis les paramètres de l'app.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Contenu et données</h2>
+    <p>Les métadonnées des séries et films (titres, affiches, casting, synopsis) proviennent de <a class="inline" href="https://www.themoviedb.org" target="_blank" rel="noopener">The Movie Database (TMDB)</a> et appartiennent à leurs ayants droit respectifs. Haneul n'est pas affiliée à TMDB.</p>
+    <p>Vos notes personnelles, évaluations et listes restent les vôtres. Vous êtes seul responsable du contenu que vous ajoutez, y compris les publications communautaires, informations de profil et avis.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Règles de la communauté</h2>
+    <p>Les fonctionnalités communautaires de Haneul (profils publics, abonnements, découverte) visent à connecter les fans de dramas et films coréens dans un espace respectueux. En les utilisant, vous acceptez les règles suivantes :</p>
+
+    <div class="conduct-grid">
+      <div class="conduct-item">
+        <span class="dot"></span>
+        <p><strong>Pas de harcèlement ni de discours haineux.</strong> Tout contenu menaçant, intimidant ou discriminatoire (origine, religion, genre, orientation sexuelle, handicap, nationalité) est strictement interdit.</p>
+      </div>
+      <div class="conduct-item">
+        <span class="dot"></span>
+        <p><strong>Pas de contenu explicite ou adulte.</strong> Photos de profil, bannières, noms d'utilisateur et textes ne doivent contenir aucun contenu sexuellement explicite, violent ou inapproprié.</p>
+      </div>
+      <div class="conduct-item">
+        <span class="dot"></span>
+        <p><strong>Pas d'usurpation d'identité.</strong> Il est interdit de se faire passer pour une autre personne, personnalité publique ou entité.</p>
+      </div>
+      <div class="conduct-item">
+        <span class="dot"></span>
+        <p><strong>Pas de spam ni manipulation.</strong> Les abonnements massifs, faux engagements, comptes automatisés et contenus promotionnels non sollicités sont interdits.</p>
+      </div>
+      <div class="conduct-item">
+        <span class="dot"></span>
+        <p><strong>Spoilers sans avertissement interdits.</strong> Merci de respecter les autres utilisateurs en évitant de poster des spoilers non signalés pour des épisodes ou films récents dans les espaces publics.</p>
+      </div>
+      <div class="conduct-item">
+        <span class="dot"></span>
+        <p><strong>Respect de la propriété intellectuelle.</strong> N'importez pas d'images, vidéos ou textes protégés par le droit d'auteur sans en avoir les droits.</p>
+      </div>
+      <div class="conduct-item">
+        <span class="dot"></span>
+        <p><strong>Pas d'activité illégale.</strong> Utiliser Haneul pour faciliter le partage de contenu piraté ou toute activité illégale est interdit.</p>
+      </div>
+    </div>
+
+    <div class="enforcement">
+      <h3>Signalement et modération</h3>
+      <p>Si vous rencontrez un contenu ou comportement violant ces règles, vous pouvez le signaler directement dans l'app, ou nous contacter à <a class="inline" href="mailto:haneul.app.contact@gmail.com">haneul.app.contact@gmail.com</a>.</p>
+      <p>Nous nous réservons le droit de retirer du contenu, de restreindre les fonctionnalités communautaires, ou de suspendre/supprimer des comptes en violation de ces règles, à notre discrétion et sans préavis pour les violations graves. Pour les manquements mineurs ou premiers, nous privilégierons un avertissement préalable.</p>
+      <p>Vous pouvez faire appel d'une décision de modération en nous contactant à l'adresse ci-dessus — chaque appel sera examiné au cas par cas.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Utilisation acceptable</h2>
+    <p>Vous vous engagez à ne pas tenter de désassembler, décompiler ou extraire le code source de l'app, sauf si la loi l'autorise. Vous vous engagez également à ne pas perturber le fonctionnement normal de l'app, ni tenter d'accéder sans autorisation aux comptes d'autres utilisateurs ou à nos serveurs.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>Abonnements et dons</h2>
+    <p>Haneul accepte actuellement des dons volontaires via Ko-fi, distincts de tout achat intégré et non traités par Apple ou Google. Si des abonnements payants ou achats intégrés sont introduits ultérieurement, des conditions spécifiques (incluant les politiques de remboursement, conformément aux règles d'Apple App Store et Google Play) seront communiquées et ces conditions mises à jour en conséquence.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>Absence de garantie</h2>
+    <p>Haneul est fournie « telle quelle » sans garantie d'aucune sorte, expresse ou implicite. Nous ne garantissons pas que l'app sera ininterrompue, exempte d'erreurs, ou que les données issues de TMDB seront toujours complètes ou exactes.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>Limitation de responsabilité</h2>
+    <p>Dans la mesure permise par la loi, HaneulCreator ne pourra être tenu responsable de dommages indirects, accessoires ou consécutifs résultant de votre utilisation de l'app, y compris la perte de données non sauvegardées via la synchronisation cloud.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>Résiliation</h2>
+    <p>Vous pouvez cesser d'utiliser Haneul et supprimer votre compte à tout moment. Nous pouvons suspendre ou résilier l'accès à l'app ou à certaines fonctionnalités en cas de violation de ces conditions, comme décrit dans la section Règles de la communauté.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span>Modifications des conditions</h2>
+    <p>Nous pouvons mettre à jour ces conditions, notamment lors de l'ajout de nouvelles fonctionnalités (abonnements, publicités). Toute modification substantielle sera notifiée dans l'app.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span>Droit applicable</h2>
+    <p>Ces conditions sont régies par le droit français. Tout litige relève de la compétence exclusive des tribunaux français compétents, sans préjudice des droits impératifs de protection des consommateurs dont vous pourriez bénéficier selon la loi de votre pays de résidence.</p>
+  </section>
+
+  <div class="contact-box">
+    <p>Une question sur ces conditions ?</p>
+    <a class="email" href="mailto:haneul.app.contact@gmail.com">haneul.app.contact@gmail.com</a>
+  </div>
+
+  <footer>
+    <span>© 2026 Haneul 하늘</span>
+    <a href="index.fr.html">← Politique de confidentialité</a>
+  </footer>
+
+</div>
+</body>
+</html>
