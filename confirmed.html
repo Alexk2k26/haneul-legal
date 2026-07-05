@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haneul — Email Confirmed</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;600&display=swap');
+
+  :root {
+    --bg: #0D0B1E;
+    --bg-card: #14112A;
+    --border: #2A2550;
+    --violet: #7C3AED;
+    --blue: #3B82F6;
+    --green: #4ADE80;
+    --text: #E8E6F5;
+    --text-dim: #9D97C4;
+    --text-faint: #6A638F;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 800px 500px at 10% -10%, rgba(124,58,237,0.18), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 0%, rgba(59,130,246,0.14), transparent 60%);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: 'Manrope', system-ui, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .card {
+    max-width: 460px;
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+
+  .mark {
+    width: 64px; height: 64px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--violet), var(--blue));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 30px; font-weight: 600; color: white;
+    margin: 0 auto 1.75rem;
+    box-shadow: 0 8px 30px rgba(124,58,237,0.35);
+  }
+
+  .check {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: rgba(74,222,128,0.12);
+    border: 1px solid rgba(74,222,128,0.35);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1.5rem;
+  }
+  .check svg { width: 24px; height: 24px; }
+
+  h1 {
+    font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em;
+    color: #fff; margin-bottom: 0.75rem;
+  }
+
+  p { color: var(--text-dim); font-size: 0.97rem; margin-bottom: 0.5rem; }
+  p.sub { color: var(--text-faint); font-size: 0.88rem; margin-top: 1.5rem; }
+
+  .hint {
+    margin-top: 2rem;
+    background: rgba(124,58,237,0.08);
+    border: 1px solid rgba(124,58,237,0.25);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    font-size: 0.88rem;
+    color: var(--text-dim);
+  }
+
+  footer {
+    margin-top: 2.5rem;
+    color: var(--text-faint);
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="mark">하</div>
+
+    <div class="check">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 6L9 17l-5-5" stroke="#4ADE80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <h1>Email confirmed!</h1>
+    <p>Your Haneul account is now active.</p>
+    <p>You can close this page and head back to the app to start tracking your favorite dramas and films.</p>
+
+    <div class="hint">
+      Tip: if the app doesn't reopen automatically, just find it on your phone's home screen — you'll already be signed in.
+    </div>
+
+    <footer>© 2026 Haneul 하늘</footer>
+  </div>
+
+</body>
+</html>
