@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "82SMJX3XQZ.com.toi.haneul",
+        "paths": ["/auth/callback"]
+      }
+    ]
+  }
+}
